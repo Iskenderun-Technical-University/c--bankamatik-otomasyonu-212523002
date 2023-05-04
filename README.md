@@ -8,7 +8,11 @@ SQL ile bankamatik otomasyonu.
  Proje sonunda ortaya çıkacak olan yazılımda ki özellikler :
  
   -> Yetkili ve Müşteri girişlerimiz olacaktir. (Unutulan şifre için " Şifremi Unuttum " butonu mevcuttur.)
+  
   -> Yetkili işlemlerinde aşağıda vermiş olduğum tablodaki özellikler SQL ile veriler depolanır gerektiğinde güncellenir veya bilgiler çekilebilir.
+  
   -> Müşteri işlemlerinde aşağıda vermiş olduğum tablodaki özellikler SQL yardımı ile veriler elde edilir ve işlemler sorunsuzca halledilebilir.
+  
   -> Kullancağım SQL ile şifre ,  MüşteriID, YetkiliId, Bakiye ve, Hesap Hareketleri bilgilerini tutacağım , güncelleyeceğim.
+  
 ![capture_20230504191821948](https://user-images.githubusercontent.com/115742666/236269563-07d31fdf-c1f6-4db8-a43a-fc7d74c59e96.jpg)
