@@ -21,7 +21,9 @@ namespace BankamatikOtomasyonu
 
         SqlConnection con = new SqlConnection(" server = LAPTOP-F1R95NSP\\SQLEXPRESS ; initial catalog = BankamatikOtomasyonu; integrated security = sspi ");
         public static string adSoyad = "";
-        public static int mID;
+        public static int mID = 0;
+        public static float mBakiye = 0.0f;
+
         private void Form1_Load(object sender, EventArgs e)
         {
             radioButton2.Checked= true;
@@ -90,6 +92,7 @@ namespace BankamatikOtomasyonu
                 {
                     adSoyad = dr["adSoyad"].ToString();
                     mID = int.Parse(dr["ID"].ToString());
+                    mBakiye = float.Parse(dr["bakiye"].ToString());
                     sonuc = true;
                 }
                 con.Close();
