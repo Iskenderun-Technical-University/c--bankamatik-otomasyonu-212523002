@@ -23,5 +23,11 @@ namespace BankamatikOtomasyonu
             frm.Show();
             this.Close();
         }
+
+        private void btnEkle_Click(object sender, EventArgs e)
+        {
+            MusteriEkle me= new MusteriEkle();
+            me.Show();
+        }
     }
 }

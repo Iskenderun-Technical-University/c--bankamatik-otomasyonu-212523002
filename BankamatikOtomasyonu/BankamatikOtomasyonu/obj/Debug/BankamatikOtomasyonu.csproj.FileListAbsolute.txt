@@ -22,3 +22,4 @@ C:\Users\azra şimşek\OneDrive\Masaüstü\projem\BankamatikOtomasyonu\Bankamati
 C:\Users\azra şimşek\OneDrive\Masaüstü\projem\BankamatikOtomasyonu\BankamatikOtomasyonu\obj\Debug\BankamatikOtomasyonu.pdb
 C:\Users\azra şimşek\OneDrive\Masaüstü\projem\BankamatikOtomasyonu\BankamatikOtomasyonu\obj\Debug\BankamatikOtomasyonu.YetkiliIslem.resources
 C:\Users\azra şimşek\OneDrive\Masaüstü\projem\BankamatikOtomasyonu\BankamatikOtomasyonu\obj\Debug\BankamatikOtomasyonu.MüsteriIşlemleri.resources
+C:\Users\azra şimşek\OneDrive\Masaüstü\projem\BankamatikOtomasyonu\BankamatikOtomasyonu\obj\Debug\BankamatikOtomasyonu.MusteriEkle.resources
