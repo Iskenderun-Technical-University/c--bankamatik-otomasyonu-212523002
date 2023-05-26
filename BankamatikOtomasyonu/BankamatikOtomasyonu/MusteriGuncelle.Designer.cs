@@ -45,6 +45,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnCikis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtAra
@@ -215,12 +216,26 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btnCikis
+            // 
+            this.btnCikis.BackColor = System.Drawing.Color.Tomato;
+            this.btnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCikis.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCikis.Location = new System.Drawing.Point(289, 665);
+            this.btnCikis.Name = "btnCikis";
+            this.btnCikis.Size = new System.Drawing.Size(153, 45);
+            this.btnCikis.TabIndex = 38;
+            this.btnCikis.Text = "ÇIKIŞ";
+            this.btnCikis.UseVisualStyleBackColor = false;
+            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
+            // 
             // MusteriGuncelle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(534, 677);
+            this.ClientSize = new System.Drawing.Size(573, 732);
+            this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtAra);
             this.Controls.Add(this.label8);
@@ -265,5 +280,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCikis;
     }
 }

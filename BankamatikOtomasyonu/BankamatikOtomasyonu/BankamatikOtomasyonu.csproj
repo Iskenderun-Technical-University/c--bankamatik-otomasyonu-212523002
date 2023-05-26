@@ -70,6 +70,12 @@
     <Compile Include="MusteriGuncelle.Designer.cs">
       <DependentUpon>MusteriGuncelle.cs</DependentUpon>
     </Compile>
+    <Compile Include="MusteriListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriListele.Designer.cs">
+      <DependentUpon>MusteriListele.cs</DependentUpon>
+    </Compile>
     <Compile Include="MüsteriIşlemleri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MusteriGuncelle.resx">
       <DependentUpon>MusteriGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriListele.resx">
+      <DependentUpon>MusteriListele.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MüsteriIşlemleri.resx">
       <DependentUpon>MüsteriIşlemleri.cs</DependentUpon>

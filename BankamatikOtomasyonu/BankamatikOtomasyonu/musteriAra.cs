@@ -128,6 +128,11 @@ namespace BankamatikOtomasyonu
         {
 
         }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
   

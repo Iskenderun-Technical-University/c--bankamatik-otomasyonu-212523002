@@ -75,6 +75,7 @@
             this.btnListele.TabIndex = 4;
             this.btnListele.Text = "Müşterileri Listele";
             this.btnListele.UseVisualStyleBackColor = false;
+            this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
             // 
             // btnSil
             // 

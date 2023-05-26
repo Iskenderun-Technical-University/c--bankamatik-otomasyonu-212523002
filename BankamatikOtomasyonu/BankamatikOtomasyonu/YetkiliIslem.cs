@@ -41,5 +41,11 @@ namespace BankamatikOtomasyonu
             MusteriGuncelle mg = new MusteriGuncelle();
             mg.Show();
         }
+
+        private void btnListele_Click(object sender, EventArgs e)
+        {
+            MusteriListele ml = new MusteriListele();
+            ml.Show();
+        }
     }
 }

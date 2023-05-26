@@ -56,5 +56,10 @@ namespace BankamatikOtomasyonu
             txtTelefon.Text = "";
             txtBakiye.Text = "";
         }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

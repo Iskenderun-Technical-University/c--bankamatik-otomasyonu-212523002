@@ -44,6 +44,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtAra = new System.Windows.Forms.TextBox();
+            this.btnCikis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -220,12 +221,26 @@
             this.txtAra.TabIndex = 0;
             this.txtAra.TextChanged += new System.EventHandler(this.txtAra_TextChanged);
             // 
+            // btnCikis
+            // 
+            this.btnCikis.BackColor = System.Drawing.Color.Tomato;
+            this.btnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCikis.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCikis.Location = new System.Drawing.Point(224, 554);
+            this.btnCikis.Name = "btnCikis";
+            this.btnCikis.Size = new System.Drawing.Size(153, 45);
+            this.btnCikis.TabIndex = 21;
+            this.btnCikis.Text = "ÇIKIŞ";
+            this.btnCikis.UseVisualStyleBackColor = false;
+            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
+            // 
             // musteriAra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(415, 560);
+            this.ClientSize = new System.Drawing.Size(434, 641);
+            this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.txtAra);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtID);
@@ -268,5 +283,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtAra;
+        private System.Windows.Forms.Button btnCikis;
     }
 }

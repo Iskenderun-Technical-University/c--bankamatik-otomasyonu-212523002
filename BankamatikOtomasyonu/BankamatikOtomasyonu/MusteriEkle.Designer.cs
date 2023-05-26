@@ -40,6 +40,7 @@
             this.txtTelefon = new System.Windows.Forms.MaskedTextBox();
             this.txtBakiye = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnCikis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -151,13 +152,26 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Wheat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(220, 445);
+            this.button1.Location = new System.Drawing.Point(208, 443);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 48);
+            this.button1.Size = new System.Drawing.Size(153, 48);
             this.button1.TabIndex = 5;
             this.button1.Text = "Kaydet";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnCikis
+            // 
+            this.btnCikis.BackColor = System.Drawing.Color.Tomato;
+            this.btnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCikis.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCikis.Location = new System.Drawing.Point(208, 514);
+            this.btnCikis.Name = "btnCikis";
+            this.btnCikis.Size = new System.Drawing.Size(153, 50);
+            this.btnCikis.TabIndex = 6;
+            this.btnCikis.Text = "ÇIKIŞ";
+            this.btnCikis.UseVisualStyleBackColor = false;
+            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
             // MusteriEkle
             // 
@@ -165,6 +179,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(489, 596);
+            this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtBakiye);
             this.Controls.Add(this.txtTelefon);
@@ -199,5 +214,6 @@
         private System.Windows.Forms.MaskedTextBox txtTelefon;
         private System.Windows.Forms.MaskedTextBox txtBakiye;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCikis;
     }
 }

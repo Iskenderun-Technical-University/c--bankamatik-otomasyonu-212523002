@@ -25,3 +25,4 @@ C:\Users\azra şimşek\OneDrive\Masaüstü\projem\BankamatikOtomasyonu\Bankamati
 C:\Users\azra şimşek\OneDrive\Masaüstü\projem\BankamatikOtomasyonu\BankamatikOtomasyonu\obj\Debug\BankamatikOtomasyonu.MusteriEkle.resources
 C:\Users\azra şimşek\OneDrive\Masaüstü\projem\BankamatikOtomasyonu\BankamatikOtomasyonu\obj\Debug\BankamatikOtomasyonu.musteriAra.resources
 C:\Users\azra şimşek\OneDrive\Masaüstü\projem\BankamatikOtomasyonu\BankamatikOtomasyonu\obj\Debug\BankamatikOtomasyonu.MusteriGuncelle.resources
+C:\Users\azra şimşek\OneDrive\Masaüstü\projem\BankamatikOtomasyonu\BankamatikOtomasyonu\obj\Debug\BankamatikOtomasyonu.MusteriListele.resources
