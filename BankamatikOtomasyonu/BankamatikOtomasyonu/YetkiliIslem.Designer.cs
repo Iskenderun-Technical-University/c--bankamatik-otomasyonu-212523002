@@ -97,6 +97,7 @@
             this.btnGuncelle.TabIndex = 2;
             this.btnGuncelle.Text = "Müşteri Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = false;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnAra
             // 

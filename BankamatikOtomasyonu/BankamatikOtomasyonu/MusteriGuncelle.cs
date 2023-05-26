@@ -8,11 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 namespace BankamatikOtomasyonu
 {
-    public partial class musteriAra : Form
+    public partial class MusteriGuncelle : Form
     {
-        public musteriAra()
+        public MusteriGuncelle()
         {
             InitializeComponent();
         }
@@ -25,8 +26,8 @@ namespace BankamatikOtomasyonu
             komut.Parameters.AddWithValue("@p2", txtAra.Text);
             con.Open();
 
-            
-            
+
+
             if (txtAra.Text == "")
             {
                 MessageBox.Show("Lütfen TcNo/ID Giriniz.", "Müşteri Arama Hatası", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -51,83 +52,38 @@ namespace BankamatikOtomasyonu
                 }
             }
             con.Close();
-
         }
 
-        private void txtBakiye_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
+            SqlCommand komut = new SqlCommand(" update musteriler set adSoyad=@p3 ,adres=@p4 ,telefon=@p5 where ID = @p1 or tcNo = @p2 ", con);
+            komut.Parameters.AddWithValue("@p1", txtAra.Text);
+            komut.Parameters.AddWithValue("@p2", txtAra.Text);
+            komut.Parameters.AddWithValue("@p3", txtAdSoyad.Text);
+            komut.Parameters.AddWithValue("@p4", txtAdres.Text);
+            komut.Parameters.AddWithValue("@p5", txtTelefon.Text);
+            con.Open();
 
-        }
+            int sonuc= komut.ExecuteNonQuery();
 
-        private void txtTelefon_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
+            if (sonuc==1)
+            {
+                MessageBox.Show("Güncelleme Yapıldı.", "Müşteri Güncelleme İşlemi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                MessageBox.Show("Güncelleme Yapılamadı !", "Müşteri Güncelleme Hatası", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-        }
+            }
 
-        private void txtAdres_TextChanged(object sender, EventArgs e)
-        {
+            txtID.Text = "";
+            txtTcNo.Text = "";
+            txtAdSoyad.Text = "";
+            txtAdres.Text = "";
+            txtTelefon.Text = "";
+            txtBakiye.Text = "";
 
-        }
-
-        private void txtTcNo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtAdSoyad_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtID_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtAra_TextChanged(object sender, EventArgs e)
-        {
-
+            con.Close();
         }
     }
 }
-  

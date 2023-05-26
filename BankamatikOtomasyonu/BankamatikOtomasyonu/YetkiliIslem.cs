@@ -35,5 +35,11 @@ namespace BankamatikOtomasyonu
             musteriAra ma = new musteriAra();
             ma.Show();
         }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            MusteriGuncelle mg = new MusteriGuncelle();
+            mg.Show();
+        }
     }
 }
