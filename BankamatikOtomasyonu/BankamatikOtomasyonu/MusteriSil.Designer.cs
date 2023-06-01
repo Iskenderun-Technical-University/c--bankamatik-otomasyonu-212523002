@@ -1,6 +1,6 @@
 ﻿namespace BankamatikOtomasyonu
 {
-    partial class MusteriGuncelle
+    partial class MusteriSil
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnCikis = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.txtAra = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
@@ -44,59 +46,79 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnCikis = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnCikis
+            // 
+            this.btnCikis.BackColor = System.Drawing.Color.Tomato;
+            this.btnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCikis.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCikis.Location = new System.Drawing.Point(268, 673);
+            this.btnCikis.Name = "btnCikis";
+            this.btnCikis.Size = new System.Drawing.Size(220, 45);
+            this.btnCikis.TabIndex = 56;
+            this.btnCikis.Text = "ÇIKIŞ";
+            this.btnCikis.UseVisualStyleBackColor = false;
+            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.LightCoral;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.ForeColor = System.Drawing.SystemColors.Control;
+            this.button2.Location = new System.Drawing.Point(163, 592);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(325, 52);
+            this.button2.TabIndex = 55;
+            this.button2.Text = "SİL";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtAra
             // 
             this.txtAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtAra.Location = new System.Drawing.Point(180, 100);
+            this.txtAra.Location = new System.Drawing.Point(268, 103);
             this.txtAra.Name = "txtAra";
-            this.txtAra.Size = new System.Drawing.Size(305, 27);
-            this.txtAra.TabIndex = 21;
-            this.txtAra.TextChanged += new System.EventHandler(this.txtAra_TextChanged);
+            this.txtAra.Size = new System.Drawing.Size(220, 27);
+            this.txtAra.TabIndex = 39;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(54, 103);
+            this.label8.Location = new System.Drawing.Point(159, 110);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(96, 20);
-            this.label8.TabIndex = 36;
+            this.label8.TabIndex = 54;
             this.label8.Text = " ID / TcNo :";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // txtID
             // 
             this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtID.Location = new System.Drawing.Point(180, 199);
+            this.txtID.Location = new System.Drawing.Point(163, 204);
             this.txtID.Name = "txtID";
             this.txtID.ReadOnly = true;
-            this.txtID.Size = new System.Drawing.Size(305, 27);
-            this.txtID.TabIndex = 34;
-            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
+            this.txtID.Size = new System.Drawing.Size(325, 27);
+            this.txtID.TabIndex = 52;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(54, 199);
+            this.label7.Location = new System.Drawing.Point(37, 204);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(76, 20);
-            this.label7.TabIndex = 35;
+            this.label7.TabIndex = 53;
             this.label7.Text = "NO / ID :";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Wheat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(295, 133);
+            this.button1.Location = new System.Drawing.Point(268, 136);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(190, 37);
-            this.button1.TabIndex = 22;
+            this.button1.Size = new System.Drawing.Size(220, 37);
+            this.button1.TabIndex = 40;
             this.button1.Text = "Ara";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -104,152 +126,119 @@
             // txtBakiye
             // 
             this.txtBakiye.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtBakiye.Location = new System.Drawing.Point(180, 525);
+            this.txtBakiye.Location = new System.Drawing.Point(163, 530);
             this.txtBakiye.Mask = "000000000000";
             this.txtBakiye.Name = "txtBakiye";
             this.txtBakiye.ReadOnly = true;
-            this.txtBakiye.Size = new System.Drawing.Size(305, 27);
-            this.txtBakiye.TabIndex = 31;
+            this.txtBakiye.Size = new System.Drawing.Size(325, 27);
+            this.txtBakiye.TabIndex = 49;
             this.txtBakiye.ValidatingType = typeof(int);
-            this.txtBakiye.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtBakiye_MaskInputRejected);
             // 
             // txtTelefon
             // 
             this.txtTelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTelefon.Location = new System.Drawing.Point(180, 458);
+            this.txtTelefon.Location = new System.Drawing.Point(163, 463);
             this.txtTelefon.Mask = "(999) 000-0000";
             this.txtTelefon.Name = "txtTelefon";
-            this.txtTelefon.Size = new System.Drawing.Size(305, 27);
-            this.txtTelefon.TabIndex = 29;
-            this.txtTelefon.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtTelefon_MaskInputRejected);
+            this.txtTelefon.ReadOnly = true;
+            this.txtTelefon.Size = new System.Drawing.Size(325, 27);
+            this.txtTelefon.TabIndex = 47;
             // 
             // txtAdres
             // 
             this.txtAdres.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtAdres.Location = new System.Drawing.Point(180, 395);
+            this.txtAdres.Location = new System.Drawing.Point(163, 400);
             this.txtAdres.Name = "txtAdres";
-            this.txtAdres.Size = new System.Drawing.Size(305, 27);
-            this.txtAdres.TabIndex = 27;
-            this.txtAdres.TextChanged += new System.EventHandler(this.txtAdres_TextChanged);
+            this.txtAdres.ReadOnly = true;
+            this.txtAdres.Size = new System.Drawing.Size(325, 27);
+            this.txtAdres.TabIndex = 45;
             // 
             // txtTcNo
             // 
             this.txtTcNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtTcNo.Location = new System.Drawing.Point(180, 261);
+            this.txtTcNo.Location = new System.Drawing.Point(163, 266);
             this.txtTcNo.Name = "txtTcNo";
             this.txtTcNo.ReadOnly = true;
-            this.txtTcNo.Size = new System.Drawing.Size(305, 27);
-            this.txtTcNo.TabIndex = 23;
-            this.txtTcNo.TextChanged += new System.EventHandler(this.txtTcNo_TextChanged);
+            this.txtTcNo.Size = new System.Drawing.Size(325, 27);
+            this.txtTcNo.TabIndex = 41;
             // 
             // txtAdSoyad
             // 
             this.txtAdSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtAdSoyad.Location = new System.Drawing.Point(180, 328);
+            this.txtAdSoyad.Location = new System.Drawing.Point(163, 333);
             this.txtAdSoyad.Name = "txtAdSoyad";
-            this.txtAdSoyad.Size = new System.Drawing.Size(305, 27);
-            this.txtAdSoyad.TabIndex = 25;
-            this.txtAdSoyad.TextChanged += new System.EventHandler(this.txtAdSoyad_TextChanged);
+            this.txtAdSoyad.ReadOnly = true;
+            this.txtAdSoyad.Size = new System.Drawing.Size(325, 27);
+            this.txtAdSoyad.TabIndex = 43;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label6.Location = new System.Drawing.Point(176, 38);
+            this.label6.Location = new System.Drawing.Point(171, 37);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(195, 20);
-            this.label6.TabIndex = 33;
-            this.label6.Text = "MÜŞTERİ GÜNCELLE";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.label6.Size = new System.Drawing.Size(228, 22);
+            this.label6.TabIndex = 51;
+            this.label6.Text = "MÜŞTERİ SİLME İŞLEMİ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(56, 525);
+            this.label5.Location = new System.Drawing.Point(39, 530);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 20);
-            this.label5.TabIndex = 32;
+            this.label5.TabIndex = 50;
             this.label5.Text = "Bakiye :";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(56, 465);
+            this.label4.Location = new System.Drawing.Point(39, 470);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 20);
-            this.label4.TabIndex = 30;
+            this.label4.TabIndex = 48;
             this.label4.Text = "Telefon :";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(56, 398);
+            this.label3.Location = new System.Drawing.Point(39, 403);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 20);
-            this.label3.TabIndex = 28;
+            this.label3.TabIndex = 46;
             this.label3.Text = "Adres :";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(56, 328);
+            this.label2.Location = new System.Drawing.Point(39, 333);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 20);
-            this.label2.TabIndex = 26;
+            this.label2.TabIndex = 44;
             this.label2.Text = "Ad / Soyad :";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(56, 261);
+            this.label1.Location = new System.Drawing.Point(39, 266);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 20);
-            this.label1.TabIndex = 24;
+            this.label1.TabIndex = 42;
             this.label1.Text = "TC NO :";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Wheat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(180, 581);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(305, 52);
-            this.button2.TabIndex = 37;
-            this.button2.Text = "Güncelle";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnCikis
-            // 
-            this.btnCikis.BackColor = System.Drawing.Color.Tomato;
-            this.btnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnCikis.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCikis.Location = new System.Drawing.Point(269, 666);
-            this.btnCikis.Name = "btnCikis";
-            this.btnCikis.Size = new System.Drawing.Size(216, 45);
-            this.btnCikis.TabIndex = 38;
-            this.btnCikis.Text = "ÇIKIŞ";
-            this.btnCikis.UseVisualStyleBackColor = false;
-            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
-            // 
-            // MusteriGuncelle
+            // MusteriSil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(573, 732);
+            this.ClientSize = new System.Drawing.Size(571, 740);
             this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtAra);
@@ -268,10 +257,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "MusteriGuncelle";
+            this.Name = "MusteriSil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Müşteri Güncelleme İşlemleri";
-            this.Load += new System.EventHandler(this.MusteriGuncelle_Load);
+            this.Text = "Müşteri Sil";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,6 +267,8 @@
 
         #endregion
 
+        private System.Windows.Forms.Button btnCikis;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txtAra;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtID;
@@ -295,7 +285,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnCikis;
     }
 }

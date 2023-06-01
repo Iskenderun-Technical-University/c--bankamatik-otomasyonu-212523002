@@ -61,5 +61,10 @@ namespace BankamatikOtomasyonu
         {
             this.Close();
         }
+
+        private void MusteriEkle_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

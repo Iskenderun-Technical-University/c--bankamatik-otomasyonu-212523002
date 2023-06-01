@@ -52,12 +52,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="musteriAra.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="musteriAra.Designer.cs">
-      <DependentUpon>musteriAra.cs</DependentUpon>
-    </Compile>
     <Compile Include="MusteriEkle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +70,12 @@
     <Compile Include="MusteriListele.Designer.cs">
       <DependentUpon>MusteriListele.cs</DependentUpon>
     </Compile>
+    <Compile Include="MusteriSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriSil.Designer.cs">
+      <DependentUpon>MusteriSil.cs</DependentUpon>
+    </Compile>
     <Compile Include="MüsteriIşlemleri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,9 +93,6 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="musteriAra.resx">
-      <DependentUpon>musteriAra.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MusteriEkle.resx">
       <DependentUpon>MusteriEkle.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MusteriListele.resx">
       <DependentUpon>MusteriListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriSil.resx">
+      <DependentUpon>MusteriSil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MüsteriIşlemleri.resx">
       <DependentUpon>MüsteriIşlemleri.cs</DependentUpon>

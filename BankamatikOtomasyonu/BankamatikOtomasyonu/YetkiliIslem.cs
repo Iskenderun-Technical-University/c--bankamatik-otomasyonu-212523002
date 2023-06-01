@@ -30,12 +30,6 @@ namespace BankamatikOtomasyonu
             me.Show();
         }
 
-        private void btnAra_Click(object sender, EventArgs e)
-        {
-            musteriAra ma = new musteriAra();
-            ma.Show();
-        }
-
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
             MusteriGuncelle mg = new MusteriGuncelle();
@@ -46,6 +40,17 @@ namespace BankamatikOtomasyonu
         {
             MusteriListele ml = new MusteriListele();
             ml.Show();
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            MusteriSil ms = new MusteriSil();
+            ms.Show();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -195,6 +195,7 @@
             this.Name = "MusteriEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yeni Müşteri Ekle";
+            this.Load += new System.EventHandler(this.MusteriEkle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
