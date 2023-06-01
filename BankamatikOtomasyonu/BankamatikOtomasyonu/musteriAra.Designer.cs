@@ -260,6 +260,7 @@
             this.Name = "musteriAra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Müşteri Kaydetme İşlemi";
+            this.Load += new System.EventHandler(this.musteriAra_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
