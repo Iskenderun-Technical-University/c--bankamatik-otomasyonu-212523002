@@ -30,6 +30,7 @@
         {
             this.btnCikis = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnHesapH = new System.Windows.Forms.Button();
             this.btnSifre = new System.Windows.Forms.Button();
             this.btnHavale = new System.Windows.Forms.Button();
             this.btnBakiyeGoruntule = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.lblAdSoyad = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblHesapNo = new System.Windows.Forms.Label();
-            this.btnHesapH = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,6 +71,17 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri İşlemleri";
+            // 
+            // btnHesapH
+            // 
+            this.btnHesapH.BackColor = System.Drawing.Color.Wheat;
+            this.btnHesapH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnHesapH.Location = new System.Drawing.Point(151, 400);
+            this.btnHesapH.Name = "btnHesapH";
+            this.btnHesapH.Size = new System.Drawing.Size(182, 57);
+            this.btnHesapH.TabIndex = 5;
+            this.btnHesapH.Text = "Hesap Hareketleri";
+            this.btnHesapH.UseVisualStyleBackColor = false;
             // 
             // btnSifre
             // 
@@ -115,6 +126,7 @@
             this.btnParaYatır.TabIndex = 1;
             this.btnParaYatır.Text = "Para Yatır";
             this.btnParaYatır.UseVisualStyleBackColor = false;
+            this.btnParaYatır.Click += new System.EventHandler(this.btnParaYatır_Click);
             // 
             // btnParaCek
             // 
@@ -126,6 +138,7 @@
             this.btnParaCek.TabIndex = 0;
             this.btnParaCek.Text = "Para Çek";
             this.btnParaCek.UseVisualStyleBackColor = false;
+            this.btnParaCek.Click += new System.EventHandler(this.btnParaCek_Click);
             // 
             // label1
             // 
@@ -167,17 +180,6 @@
             this.lblHesapNo.Size = new System.Drawing.Size(17, 30);
             this.lblHesapNo.TabIndex = 8;
             this.lblHesapNo.Text = ".";
-            // 
-            // btnHesapH
-            // 
-            this.btnHesapH.BackColor = System.Drawing.Color.Wheat;
-            this.btnHesapH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnHesapH.Location = new System.Drawing.Point(151, 400);
-            this.btnHesapH.Name = "btnHesapH";
-            this.btnHesapH.Size = new System.Drawing.Size(182, 57);
-            this.btnHesapH.TabIndex = 5;
-            this.btnHesapH.Text = "Hesap Hareketleri";
-            this.btnHesapH.UseVisualStyleBackColor = false;
             // 
             // MüsteriIşlemleri
             // 
