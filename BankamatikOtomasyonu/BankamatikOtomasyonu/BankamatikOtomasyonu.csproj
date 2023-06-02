@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bakiye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bakiye.Designer.cs">
+      <DependentUpon>Bakiye.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Havale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Havale.Designer.cs">
+      <DependentUpon>Havale.cs</DependentUpon>
     </Compile>
     <Compile Include="MusteriEkle.cs">
       <SubType>Form</SubType>
@@ -102,8 +114,14 @@
     <Compile Include="YetkiliIslem.Designer.cs">
       <DependentUpon>YetkiliIslem.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Bakiye.resx">
+      <DependentUpon>Bakiye.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Havale.resx">
+      <DependentUpon>Havale.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MusteriEkle.resx">
       <DependentUpon>MusteriEkle.cs</DependentUpon>

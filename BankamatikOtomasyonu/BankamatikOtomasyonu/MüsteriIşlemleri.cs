@@ -47,5 +47,17 @@ namespace BankamatikOtomasyonu
             ParaYatir py = new ParaYatir();
             py.Show();
         }
+
+        private void btnBakiyeGoruntule_Click(object sender, EventArgs e)
+        {
+            Bakiye b= new Bakiye();
+            b.Show();
+        }
+
+        private void btnHavale_Click(object sender, EventArgs e)
+        {
+            Havale h = new Havale();
+            h.Show();
+        }
     }
 }

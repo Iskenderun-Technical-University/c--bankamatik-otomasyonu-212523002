@@ -46,6 +46,7 @@ namespace BankamatikOtomasyonu
                 if (sonuc == 1)
                 {
                     MessageBox.Show("Para Çekme Yapıldı.", "Para Çekme İşlemi", MessageBoxButtons.OK);
+                    Form1.mBakiye -= sayi;
                 }
                 else
                 {

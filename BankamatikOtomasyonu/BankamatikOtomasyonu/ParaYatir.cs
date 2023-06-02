@@ -46,6 +46,7 @@ namespace BankamatikOtomasyonu
                 if (sonuc == 1)
                 {
                     MessageBox.Show("Para Yatırma İşlemi Yapıldı.", "Para Yatırma İşlemi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    Form1.mBakiye += sayi;
                 }
                 else
                 {
@@ -56,6 +57,21 @@ namespace BankamatikOtomasyonu
 
                 con.Close();
             }
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace BankamatikOtomasyonu
 {
-    partial class ParaYatir
+    partial class Havale
     {
         /// <summary>
         /// Required designer variable.
@@ -30,9 +30,11 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.TxtMiktar = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.TxtNo = new System.Windows.Forms.MaskedTextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -40,11 +42,11 @@
             this.button1.BackColor = System.Drawing.Color.Wheat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(218, 300);
+            this.button1.Location = new System.Drawing.Point(255, 288);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(298, 48);
             this.button1.TabIndex = 11;
-            this.button1.Text = "PARA YATIR";
+            this.button1.Text = "Havale / EFT Yap";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -53,61 +55,79 @@
             this.button2.BackColor = System.Drawing.Color.Red;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(218, 368);
+            this.button2.Location = new System.Drawing.Point(255, 362);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(298, 51);
             this.button2.TabIndex = 10;
             this.button2.Text = "ÇIKIŞ";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // maskedTextBox1
+            // TxtMiktar
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(218, 214);
-            this.maskedTextBox1.Mask = "0000000000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(298, 28);
-            this.maskedTextBox1.TabIndex = 9;
-            this.maskedTextBox1.ValidatingType = typeof(int);
-            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
+            this.TxtMiktar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtMiktar.Location = new System.Drawing.Point(255, 210);
+            this.TxtMiktar.Mask = "0000000000";
+            this.TxtMiktar.Name = "TxtMiktar";
+            this.TxtMiktar.Size = new System.Drawing.Size(298, 28);
+            this.TxtMiktar.TabIndex = 9;
+            this.TxtMiktar.ValidatingType = typeof(int);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(49, 214);
+            this.label2.Location = new System.Drawing.Point(85, 213);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 22);
             this.label2.TabIndex = 8;
             this.label2.Text = "Miktar (TL) :";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(167, 81);
+            this.label1.Location = new System.Drawing.Point(250, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(389, 25);
+            this.label1.Size = new System.Drawing.Size(225, 25);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Yatırmak İstediğiniz Para Miktarı Nedir?";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Text = "Havale / EFT İşlemleri";
             // 
-            // ParaYatir
+            // TxtNo
+            // 
+            this.TxtNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtNo.Location = new System.Drawing.Point(255, 146);
+            this.TxtNo.Mask = "0000000000";
+            this.TxtNo.Name = "TxtNo";
+            this.TxtNo.Size = new System.Drawing.Size(298, 28);
+            this.TxtNo.TabIndex = 13;
+            this.TxtNo.ValidatingType = typeof(int);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(85, 149);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(138, 22);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Alıcı Hesap No :";
+            // 
+            // Havale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(703, 503);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.TxtNo);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.TxtMiktar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "ParaYatir";
+            this.Name = "Havale";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Para Yatırma İşlemi";
+            this.Text = "Havale/EFT İşlemleri";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,8 +137,10 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox TxtMiktar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MaskedTextBox TxtNo;
+        private System.Windows.Forms.Label label3;
     }
 }
