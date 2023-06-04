@@ -58,11 +58,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HareketKaydet.cs" />
     <Compile Include="Havale.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Havale.Designer.cs">
       <DependentUpon>Havale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HesapHaraketleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HesapHaraketleri.Designer.cs">
+      <DependentUpon>HesapHaraketleri.cs</DependentUpon>
     </Compile>
     <Compile Include="MusteriEkle.cs">
       <SubType>Form</SubType>
@@ -114,6 +121,12 @@
     <Compile Include="SifreDeğistir.Designer.cs">
       <DependentUpon>SifreDeğistir.cs</DependentUpon>
     </Compile>
+    <Compile Include="SifreUret.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifreUret.Designer.cs">
+      <DependentUpon>SifreUret.cs</DependentUpon>
+    </Compile>
     <Compile Include="YetkiliIslem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Havale.resx">
       <DependentUpon>Havale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HesapHaraketleri.resx">
+      <DependentUpon>HesapHaraketleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MusteriEkle.resx">
       <DependentUpon>MusteriEkle.cs</DependentUpon>
@@ -161,6 +177,9 @@
     </Compile>
     <EmbeddedResource Include="SifreDeğistir.resx">
       <DependentUpon>SifreDeğistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SifreUret.resx">
+      <DependentUpon>SifreUret.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="YetkiliIslem.resx">
       <DependentUpon>YetkiliIslem.cs</DependentUpon>

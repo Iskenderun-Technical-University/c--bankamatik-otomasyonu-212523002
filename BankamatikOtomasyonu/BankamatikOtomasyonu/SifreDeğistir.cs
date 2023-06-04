@@ -50,6 +50,8 @@ namespace BankamatikOtomasyonu
                 if (sonuc == 1)
                 {
                     MessageBox.Show("Şifre Değiştirme İşlemi Yapıldı.", "Şifre Değiştirme İşlemi", MessageBoxButtons.OK);
+                    HareketKaydet.kaydet(Form1.mID, "Şifre Değiştirildi ");
+
                 }
                 else
                 {
@@ -65,6 +67,31 @@ namespace BankamatikOtomasyonu
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEski_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtYeni_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

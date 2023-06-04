@@ -47,6 +47,8 @@ namespace BankamatikOtomasyonu
                 {
                     MessageBox.Show("Para Yatırma İşlemi Yapıldı.", "Para Yatırma İşlemi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     Form1.mBakiye += sayi;
+                    HareketKaydet.kaydet(Form1.mID, (sayi + "TL Para Yatırıldı "));
+
                 }
                 else
                 {

@@ -46,6 +46,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.btnCikis = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtDurum = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // txtAra
@@ -104,7 +106,7 @@
             // txtBakiye
             // 
             this.txtBakiye.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtBakiye.Location = new System.Drawing.Point(180, 525);
+            this.txtBakiye.Location = new System.Drawing.Point(180, 558);
             this.txtBakiye.Mask = "000000000000";
             this.txtBakiye.Name = "txtBakiye";
             this.txtBakiye.ReadOnly = true;
@@ -168,7 +170,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(56, 525);
+            this.label5.Location = new System.Drawing.Point(54, 561);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 20);
             this.label5.TabIndex = 32;
@@ -223,7 +225,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Wheat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(180, 581);
+            this.button2.Location = new System.Drawing.Point(180, 608);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(305, 52);
             this.button2.TabIndex = 37;
@@ -244,12 +246,33 @@
             this.btnCikis.UseVisualStyleBackColor = false;
             this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(56, 518);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(105, 20);
+            this.label9.TabIndex = 40;
+            this.label9.Text = "Durum(0/1) :";
+            // 
+            // txtDurum
+            // 
+            this.txtDurum.Location = new System.Drawing.Point(180, 516);
+            this.txtDurum.Mask = "0";
+            this.txtDurum.Name = "txtDurum";
+            this.txtDurum.Size = new System.Drawing.Size(305, 22);
+            this.txtDurum.TabIndex = 41;
+            this.txtDurum.ValidatingType = typeof(int);
+            // 
             // MusteriGuncelle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(573, 732);
+            this.Controls.Add(this.txtDurum);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtAra);
@@ -297,5 +320,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnCikis;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.MaskedTextBox txtDurum;
     }
 }

@@ -260,6 +260,7 @@
             this.Name = "MusteriSil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Müşteri Sil";
+            this.Load += new System.EventHandler(this.MusteriSil_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

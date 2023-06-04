@@ -32,7 +32,8 @@ namespace BankamatikOtomasyonu
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            SifreUret su = new SifreUret();
+            su.Show();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -83,7 +84,7 @@ namespace BankamatikOtomasyonu
             else
             {
                 con.Open();
-                SqlCommand komut = new SqlCommand(" select * from musteriler where tcNo = @p1 and sifre = @p2", con );
+                SqlCommand komut = new SqlCommand(" select * from musteriler where tcNo = @p1 and sifre = @p2 and durum = 1", con );
 
                 komut.Parameters.AddWithValue("@p1", kAdi);
                 komut.Parameters.AddWithValue("@p2", parola);

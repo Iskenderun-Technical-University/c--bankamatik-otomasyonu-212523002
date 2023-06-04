@@ -49,6 +49,8 @@ namespace BankamatikOtomasyonu
                     txtAdres.Text = dr["adres"].ToString();
                     txtTelefon.Text = dr["telefon"].ToString();
                     txtBakiye.Text = dr["bakiye"].ToString();
+                    txtDurum.Text = dr["durum"].ToString();
+
                 }
             }
             con.Close();
@@ -56,12 +58,14 @@ namespace BankamatikOtomasyonu
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand(" update musteriler set adSoyad=@p3 ,adres=@p4 ,telefon=@p5 where ID = @p1 or tcNo = @p2 ", con);
+            SqlCommand komut = new SqlCommand(" update musteriler set adSoyad=@p3 ,adres=@p4 ,telefon=@p5 ,durum = @p6 where ID = @p1 or tcNo = @p2 ", con);
             komut.Parameters.AddWithValue("@p1", txtAra.Text);
             komut.Parameters.AddWithValue("@p2", txtAra.Text);
             komut.Parameters.AddWithValue("@p3", txtAdSoyad.Text);
             komut.Parameters.AddWithValue("@p4", txtAdres.Text);
             komut.Parameters.AddWithValue("@p5", txtTelefon.Text);
+            komut.Parameters.AddWithValue("@p6", txtDurum.Text);
+
             con.Open();
 
             int sonuc= komut.ExecuteNonQuery();

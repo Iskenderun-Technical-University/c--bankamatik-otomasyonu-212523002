@@ -47,6 +47,7 @@ namespace BankamatikOtomasyonu
                 {
                     MessageBox.Show("Para Çekme Yapıldı.", "Para Çekme İşlemi", MessageBoxButtons.OK);
                     Form1.mBakiye -= sayi;
+                    HareketKaydet.kaydet(Form1.mID, (sayi + "TL Para Çekildi "));
                 }
                 else
                 {

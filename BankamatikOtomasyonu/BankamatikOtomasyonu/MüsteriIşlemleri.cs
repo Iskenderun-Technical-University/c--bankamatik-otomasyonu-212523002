@@ -65,5 +65,11 @@ namespace BankamatikOtomasyonu
             SifreDeğistir sd = new SifreDeğistir();
             sd.Show();
         }
+
+        private void btnHesapH_Click(object sender, EventArgs e)
+        {
+            HesapHaraketleri hh = new HesapHaraketleri();
+            hh.Show();
+        }
     }
 }

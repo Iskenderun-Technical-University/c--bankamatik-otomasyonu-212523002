@@ -29,30 +29,36 @@ namespace BankamatikOtomasyonu
             }
             else
             {
-                SqlCommand komut = new SqlCommand(" update musteriler set bakiye =bakiye - @p1 where ID = @p2 ", con);
+                SqlCommand komut = new SqlCommand("update musteriler set bakiye= bakiye  -  @p1 where ID= @p2 ", con);
                 komut.Parameters.AddWithValue("@p1", sayi);
                 komut.Parameters.AddWithValue("@p2", Form1.mID);
 
-                SqlCommand komut2 = new SqlCommand(" update musteriler set bakiye =bakiye + @p3 where ID = @p4 ", con);
+                SqlCommand komut2 = new SqlCommand("update musteriler set bakiye= bakiye  +  @p3 where ID= @p4 ", con);
                 komut2.Parameters.AddWithValue("@p3", TxtMiktar.Text);
                 komut2.Parameters.AddWithValue("@p4", TxtNo.Text);
 
                 if (sayi < 0)
                 {
-                    MessageBox.Show("Lütfen geçerli miktar giriniz !", "Eksik Kayıt Hatası",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    MessageBox.Show("Lütfen geçerli miktar giriniz !", "Eksik Kayıt Hatası", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 }
                 else
                 {
                     con.Open();
+
                     int sonuc1 = komut2.ExecuteNonQuery();
                     con.Close();
                     if (sonuc1 == 1)
                     {
                         con.Open();
+
                         komut.ExecuteNonQuery();
                         con.Close();
                         MessageBox.Show("Havale/EFT İşlemi Gerçekleştirildi", "Havale/EFT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Form1.mBakiye -= sayi;
+                        HareketKaydet.kaydet(Form1.mID, (sayi + "TL Havale/EFT Gönderildi "));
+                        HareketKaydet.kaydet(int.Parse(TxtNo.Text), (sayi + "TL Havale/EFT Alındı "));
+
 
                     }
                     else
@@ -61,12 +67,22 @@ namespace BankamatikOtomasyonu
 
                     }
                 }
-
+            }
                 TxtMiktar.Text = "";
                 TxtNo.Text= "";
 
       
-            }
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Havale_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
