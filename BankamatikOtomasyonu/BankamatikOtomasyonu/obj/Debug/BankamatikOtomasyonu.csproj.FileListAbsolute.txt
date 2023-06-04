@@ -30,3 +30,4 @@ C:\Users\azra şimşek\OneDrive\Masaüstü\projem\BankamatikOtomasyonu\Bankamati
 C:\Users\azra şimşek\OneDrive\Masaüstü\projem\BankamatikOtomasyonu\BankamatikOtomasyonu\obj\Debug\BankamatikOtomasyonu.ParaYatir.resources
 C:\Users\azra şimşek\OneDrive\Masaüstü\projem\BankamatikOtomasyonu\BankamatikOtomasyonu\obj\Debug\BankamatikOtomasyonu.Bakiye.resources
 C:\Users\azra şimşek\OneDrive\Masaüstü\projem\BankamatikOtomasyonu\BankamatikOtomasyonu\obj\Debug\BankamatikOtomasyonu.Havale.resources
+C:\Users\azra şimşek\OneDrive\Masaüstü\projem\BankamatikOtomasyonu\BankamatikOtomasyonu\obj\Debug\BankamatikOtomasyonu.SifreDeğistir.resources

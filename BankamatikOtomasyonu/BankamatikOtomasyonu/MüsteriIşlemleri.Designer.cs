@@ -93,6 +93,7 @@
             this.btnSifre.TabIndex = 4;
             this.btnSifre.Text = "Şifre Değiştir";
             this.btnSifre.UseVisualStyleBackColor = false;
+            this.btnSifre.Click += new System.EventHandler(this.btnSifre_Click);
             // 
             // btnHavale
             // 

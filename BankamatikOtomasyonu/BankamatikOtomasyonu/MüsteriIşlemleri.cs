@@ -59,5 +59,11 @@ namespace BankamatikOtomasyonu
             Havale h = new Havale();
             h.Show();
         }
+
+        private void btnSifre_Click(object sender, EventArgs e)
+        {
+            SifreDeğistir sd = new SifreDeğistir();
+            sd.Show();
+        }
     }
 }

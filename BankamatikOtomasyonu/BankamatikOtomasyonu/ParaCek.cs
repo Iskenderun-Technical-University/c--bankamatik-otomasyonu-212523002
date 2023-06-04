@@ -53,9 +53,8 @@ namespace BankamatikOtomasyonu
                     MessageBox.Show("Para Çekme İşlemi Başarısız!", "Para Çekme İşlemi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 }
-                maskedTextBox1.Text = "";
-
                 con.Close();
+                maskedTextBox1.Text = "";
             }
         }
 
